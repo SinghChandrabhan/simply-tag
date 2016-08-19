@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Simply tag demo</title>
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="../src/simply-tag.css" rel="stylesheet" />
+</head>
+<body>
+    <div id='test'></div>
+    <input type="button" onclick="addtest()" name="name" value="Get Items" />
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../src/simply-tag.js"></script>
+    <script>
+        $('#test').simplyTag(
+        {
+            forMultiple: true,                      
+            dataSource: JSON.parse('[{ "key": 1, "value": "Value1" }, { "key": 2, "value": "value2" }, { "key": 3, "value": "value3" }]')
+        });
+
+        function addtest() {            
+            var jsonData = $('#test').simplyTag('additem',JSON.parse('{ "key": 0, "value": "Direct Add" }'));
+        }
+
+       
+    </script>
+</body>
+</html>
