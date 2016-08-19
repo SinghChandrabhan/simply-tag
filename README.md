@@ -5,4 +5,6 @@ This plugin allows user to select from a pre defined drop-down list. Any input t
 This is first version of this plugin. We will add new features time to time.
 
 
+I have added a index.html page to see how to use this plugin initially. Later I will add more tests and demo pages
+
 Enjoy simply tag.
