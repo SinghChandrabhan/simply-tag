@@ -6,7 +6,7 @@ This is first version of this plugin. We will add new features time to time.
 
 ## Demo
 
-![Screenshot](http://aehlke.github.com/simply-tag/static/demo.png)
+![Screenshot](https://github.com/SinghChandrabhan/simply-tag/blob/master/static/demo.png)
 
 I have added a index.html page to see how to use this plugin initially. Later I will add more tests and demo pages
 
