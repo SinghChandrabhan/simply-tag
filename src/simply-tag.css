@@ -1,0 +1,145 @@
+/*
+    Chandrabhan:    Style for simply tag input
+*/
+
+.simply-tag-root {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075);
+    display: inline-block;
+    padding: 5px;
+    color: #555;
+    vertical-align: middle;
+    border-radius: 4px;
+    max-width: fit-content;
+    line-height: 22px;
+    cursor: text;
+    min-width: 310px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+    .simply-tag-root .label {
+        display: inline;
+        padding: .2em .5em;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #ffffff;
+        text-align: center;
+        white-space: normal;
+        vertical-align: baseline;
+        border-radius: .2em;
+    }
+
+    .simply-tag-root input {
+        vertical-align: top;
+        position: relative;
+        background-color: transparent;
+        border: 0px;
+    }
+
+    .simply-tag-root input:focus {
+        outline: none;
+    }
+
+    .simply-tag-root .tag.valid {
+        margin-right: 5px;
+        color: #699472;
+        border: 1px solid #bbdd78;
+        background-color: #cce59b;
+    }
+
+        .simply-tag-root .tag.valid a {
+            color: #699472;
+            text-decoration: none;
+        }
+
+    .simply-tag-root input {
+        font-size: 15px;
+    }
+
+    .simply-tag-root .tag [data-role='remove']::after {
+        content: "x";
+        padding: 0px 2px;
+    }
+
+    .simply-tag-root .tag [data-role='remove'] {
+        margin-left: 8px;
+        cursor: pointer;
+    }
+
+.tag.invalid {
+    color: #d27f7f;
+    border: 1px solid #edcaca;
+    background-color: #f1d6d6;
+    margin-right: 5px;
+}
+
+    .tag.invalid a {
+        color: #d27f7f;
+        text-decoration: none;
+        cursor: default;
+    }
+
+.simply-tag-suggestion-root {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.175);
+    background-clip: padding-box;
+    cursor: pointer;
+}
+
+.simply-tag-dataset {
+    margin: 0 5px 0 5px;
+}
+
+.simply-tag-suggestion {
+    padding: 3px 10px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.4285;
+    color: #333333;
+    white-space: nowrap;
+}
+
+    .simply-tag-suggestion td {
+        padding: 4px;
+        text-align: left;
+    }
+
+    .tag-selectable,
+    .simply-tag-suggestion:hover,
+    .simply-tag-suggestion:focus {
+        color: #ffffff;
+        text-decoration: none;
+        outline: 0;
+        background-color: #428bca;
+    }
+
+    .simply-tag-suggestion span {
+        display: inline-block;
+    }
+
+        .simply-tag-suggestion span:not(:first-child) {
+            margin-right: 5px;
+        }
+
+/*.simply-tag-loader:before {
+    content: url(../img/ajax-loader.gif);
+    transition: all 0.5s ease;
+}*/
